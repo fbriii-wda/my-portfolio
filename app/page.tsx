@@ -525,7 +525,7 @@ export default function Home() {
                   key={`${exp.company}-${idx}`}
                   delay={idx * 120}
                   as="article"
-                  className="relative rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 sm:p-8 md:p-10 pointer-events-auto shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)]"
+                  className="relative rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-4 sm:p-8 md:p-10 pointer-events-auto shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)]"
                 >
                   <header className="flex flex-wrap items-start justify-between gap-3 mb-5">
                     <div>
