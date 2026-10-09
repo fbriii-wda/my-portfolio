@@ -366,7 +366,7 @@ export default function Home() {
 
               {/* CTAs */}
               <div
-                className="mt-10 flex flex-wrap items-center gap-3 pointer-events-auto fade-in-up"
+                className="mt-10 flex flex-wrap items-center gap-2 sm:gap-3 pointer-events-auto fade-in-up"
                 style={{ ["--d" as string]: "700ms" }}
               >
                 <a
@@ -375,7 +375,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   data-cursor="hover"
                   data-magnetic
-                  className="frost-btn frost-btn--primary w-full sm:w-auto"
+                  className="frost-btn frost-btn--primary w-full justify-center sm:w-auto"
                 >
                   <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
                     <path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" />
@@ -387,7 +387,7 @@ export default function Home() {
                   type="button"
                   data-cursor="hover"
                   data-magnetic
-                  className="frost-btn w-full sm:w-auto"
+                  className="frost-btn w-full justify-center sm:w-auto"
                   onClick={() =>
                     document
                       .querySelector<HTMLElement>(
@@ -396,19 +396,19 @@ export default function Home() {
                       ?.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
                 >
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="M3 7l9 6 9-6" />
+                  </svg>
                   {t("hero.hire")}
                 </button>
-                {/* Mobile-only full-width break: forces the social icons onto
-                    their own row below the two primary buttons. Hidden on md+
-                    so desktop keeps everything on a single line. */}
-                <div className="basis-full h-0 md:hidden" aria-hidden />
                 <a
                   href="https://www.instagram.com/fbriii_wda?igsi=NDlwMjZidGNkdGJq&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
                   data-magnetic
-                  className="frost-icon"
+                  className="frost-btn w-full justify-center sm:w-auto"
                   aria-label="Instagram"
                 >
                   <svg viewBox="0 0 24 24" width="16" height="16" fill="none" strokeWidth="2" aria-hidden>
@@ -423,6 +423,7 @@ export default function Home() {
                     <circle cx="12" cy="12" r="4" stroke="#DD2A7B" />
                     <circle cx="17.5" cy="6.5" r="1" fill="#F58529" stroke="none" />
                   </svg>
+                  <span>Instagram</span>
                 </a>
               </div>
             </div>
@@ -717,7 +718,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-3 pointer-events-auto">
                   <CopyEmail
                     email={EMAIL}
-                    className="frost-btn frost-btn--primary"
+                    className="frost-btn frost-btn--primary w-full justify-center sm:w-auto"
                   >
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
                       <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -728,8 +729,12 @@ export default function Home() {
                   <a
                     href={`mailto:${EMAIL}`}
                     data-cursor="hover"
-                    className="frost-btn"
+                    className="frost-btn w-full justify-center sm:w-auto"
                   >
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <path d="M3 7l9 6 9-6" />
+                    </svg>
                     {t("contact.openMail")}
                   </a>
                   <a
@@ -737,8 +742,20 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
-                    className="frost-btn"
+                    className="frost-btn w-full justify-center sm:w-auto"
                   >
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" strokeWidth="2" aria-hidden>
+                      <defs>
+                        <linearGradient id="instagram-gradient-contact" x1="3" y1="21" x2="21" y2="3">
+                          <stop offset="0%" stopColor="#F58529" />
+                          <stop offset="45%" stopColor="#DD2A7B" />
+                          <stop offset="100%" stopColor="#8134AF" />
+                        </linearGradient>
+                      </defs>
+                      <rect x="3" y="3" width="18" height="18" rx="5" stroke="url(#instagram-gradient-contact)" />
+                      <circle cx="12" cy="12" r="4" stroke="#DD2A7B" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="#F58529" stroke="none" />
+                    </svg>
                     Instagram
                   </a>
                 </div>
