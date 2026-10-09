@@ -343,7 +343,7 @@ export default function Home() {
               >
                 {t("hero.greeting")}
               </p>
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[8.5rem] font-bold tracking-[-0.03em] text-ice-50 leading-[0.92] whitespace-nowrap">
+              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[8.5rem] font-bold tracking-[-0.03em] text-ice-50 leading-[0.92] whitespace-nowrap">
                 <HeroWord text="Febri" delay={120} />
                 <br />
                 <HeroWord text="Widiane" delay={260} className="text-ice-400" />
@@ -450,7 +450,7 @@ export default function Home() {
             <div className="relative md:h-[150vh]">
               <div className="md:sticky md:top-28 text-center">
                 <Reveal>
-                  <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-[-0.03em] text-ice-50 leading-[0.95]">
+                  <h2 className="text-4xl sm:text-7xl md:text-8xl font-bold tracking-[-0.03em] text-ice-50 leading-[0.95]">
                     {t("stack.title")}
                   </h2>
                 </Reveal>
@@ -508,7 +508,7 @@ export default function Home() {
           >
             <div className="sticky top-24 sm:top-28 text-center mb-12 sm:mb-16 z-0">
               <Reveal>
-                <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-[-0.03em] text-ice-50 leading-[0.95]">
+                <h2 className="text-4xl sm:text-7xl md:text-8xl font-bold tracking-[-0.03em] text-ice-50 leading-[0.95]">
                   {t("aboutMe.title")}
                 </h2>
               </Reveal>
@@ -545,15 +545,15 @@ export default function Home() {
                     </span>
                   </header>
 
-                  <div className="grid grid-cols-[minmax(120px,160px)_1fr] gap-4 md:gap-5 items-start mb-5">
+                  <div className="grid grid-cols-1 md:grid-cols-[minmax(120px,160px)_1fr] gap-4 md:gap-5 items-start mb-5">
                     <Image
                       src={profileImage}
                       alt="Foto profil"
                       quality={100}
                       sizes="(min-width: 768px) 160px, 32vw"
-                      className="w-full aspect-3/4 object-cover rounded-xl border border-ink-3"
+                      className="w-32 md:w-full aspect-3/4 object-cover rounded-xl border border-ink-3 mx-auto md:mx-0"
                     />
-                    <p className="text-ice-200 leading-relaxed text-center md:text-left">
+                    <p className="text-ice-200 leading-relaxed text-left">
                       {pick(exp.summary, lang)}
                     </p>
                   </div>
