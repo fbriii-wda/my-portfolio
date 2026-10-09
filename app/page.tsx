@@ -762,7 +762,7 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal delay={320}>
-              <p className="mt-14 text-[11px] uppercase tracking-[0.25em] text-ice-400">
+              <p className="mt-14 whitespace-nowrap text-[8px] uppercase tracking-[0.08em] text-ice-400 sm:text-[11px] sm:tracking-[0.25em]">
                 {t("contact.footer")}
               </p>
             </Reveal>
