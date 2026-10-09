@@ -89,7 +89,7 @@ export const DICT = {
     },
     copyEmail: { id: "Salin email", en: "Copy email" },
     openMail: { id: "Buka email", en: "Open mailto" },
-    github: { id: "GitHub", en: "GitHub" },
+    github: { id: "Instagram", en: "Instagram" },
     linkedin: { id: "LinkedIn", en: "LinkedIn" },
     emailToast: { id: "Email disalin", en: "Email copied" },
     footer: {
