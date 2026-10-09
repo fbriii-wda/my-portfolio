@@ -20,10 +20,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 import * as THREE from "three";
 import { SKILLS_GRID, type SkillIcon } from "@/lib/skills";
 
-// Per-section keyboard "states" — same idea as Naresh's animated-background-
-// config.ts, but for our R3F keyboard. Values are tweened toward via lerp
-// inside useFrame; the active section is detected via IntersectionObserver
-// on elements carrying data-kb-section.
+// Per-section keyboard states are tweened toward via lerp inside useFrame.
+// The active section is detected via IntersectionObserver on elements
+// carrying data-kb-section.
 type KeyboardState = {
   yaw: number; // rotation.y
   pitch: number; // rotation.x
@@ -45,9 +44,7 @@ const SECTION_STATES: Record<string, KeyboardState> = {
     scale: 1,
   },
   stack: {
-    // Naresh's reference: keyboard lives in the lower-right, moderate
-    // isometric tilt — enough yaw to show the left face but not so much
-    // pitch that the base wall takes over the silhouette.
+    // Keep the keyboard in the lower-right with a moderate isometric tilt.
     yaw: Math.PI * 0.40,
     pitch: Math.PI * 0.14,
     roll: -Math.PI * -0.13,
@@ -477,10 +474,8 @@ function Keycap({
     const bob =
       Math.sin(t * 2.2 + wavePhase) * 0.14 * liftAmp.current;
 
-    // Contact idle: each keycap pops up at its own random cadence. We use
-    // a thresholded sine so every key spends most of its time at rest and
-    // only jumps briefly when its sine crosses the threshold — creates the
-    // Naresh-style "random keys popping" effect without anything global.
+    // Contact idle: each keycap pops up at its own random cadence. A
+    // thresholded sine keeps every key at rest most of the time.
     const isContact = activeSectionRef.current === "contact";
     contactAmp.current = THREE.MathUtils.lerp(
       contactAmp.current,
@@ -760,7 +755,7 @@ function Keyboard({ mobile }: { mobile: boolean }) {
       {/* Callout lives OUTSIDE the animated keyboard group so the keyboard's
           yaw/pitch/scale don't warp the text. Placed in world space, to the
           left of the tilted keyboard, with its own matching isometric yaw +
-          a small roll so the baseline rises left-to-right like Naresh's. */}
+          a small roll so the baseline rises left-to-right. */}
       {!mobile && activeSection === "stack" && hoveredIcon && (
         <Suspense fallback={null}>
           <group
@@ -781,10 +776,8 @@ function Keyboard({ mobile }: { mobile: boolean }) {
               bevelEnabled={false}
             >
               {hoveredIcon.title}
-              {/* Naresh-style: pure white, no emissive. All the shading
-                  comes from the directional light hitting the faces — the
-                  top face catches it, side walls fall into shadow, giving
-                  real 3D depth instead of a flat uniform glow. */}
+              {/* Pure white with no emissive; directional lighting creates
+                  depth by brightening the top face and shading the sides. */}
               <meshStandardMaterial
                 color="#ffffff"
                 roughness={0.55}
@@ -865,10 +858,9 @@ export default function FrozenKeyboard({
           scale={[8, 8, 1]}
         />
       </Environment>
-      {/* Naresh-style lighting: low ambient + strong single directional from
-          upper-left gives crisp top-bright / sides-shadowed contrast. The
-          hemisphere adds a subtle sky-ground gradient so the darkest faces
-          still read as "the lower faces" instead of pitch-black. */}
+      {/* Low ambient and strong upper-left directional lighting create
+          crisp top-bright / sides-shadowed contrast. Hemisphere lighting
+          adds a subtle sky-ground gradient to the darker faces. */}
       <ambientLight intensity={0.15} />
       <directionalLight position={[-5, 8, 3]} intensity={2.2} />
       <hemisphereLight

@@ -2,7 +2,7 @@
 
 An immersive, interactive developer portfolio built with **Next.js 16**, **React Three Fiber**, and **Tailwind CSS v4**. Features a 3D mechanical keyboard hero scene, seasonal themes, smooth scroll animations, bilingual support (ID/EN), and a fully responsive design.
 
-**[Live Demo](https://txemaalbero.com)** &nbsp;|&nbsp; **Built by [Txema Albero](https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246)**
+**Repository:** [fbriii-wda/my-portfolio](https://github.com/fbriii-wda/my-portfolio) &nbsp;|&nbsp; **Portfolio of Febri Widiane**
 
 ---
 
@@ -40,8 +40,8 @@ An immersive, interactive developer portfolio built with **Next.js 16**, **React
 
 ```bash
 # Clone the repository
-git clone https://github.com/Txemalon/3d-portfolio.git
-cd 3d-portfolio
+git clone https://github.com/fbriii-wda/my-portfolio.git
+cd my-portfolio
 
 # Install dependencies
 npm install
@@ -138,7 +138,7 @@ All UI strings live in `lib/i18n.ts` as a flat dictionary with `{ es, en }` leav
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Txemalon/3d-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/fbriii-wda/my-portfolio)
 
 ### Docker / Self-Hosted
 
@@ -162,8 +162,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 
-**Jose Maria Albero Belamendia (Txema)**
+**Febri Widiane**
 
-- [LinkedIn](https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246)
-- [GitHub](https://github.com/Txemalon)
-- [X / Twitter](https://x.com/Txemalon)
+- [GitHub](https://github.com/fbriii-wda)

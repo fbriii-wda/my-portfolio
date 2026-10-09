@@ -46,7 +46,6 @@ const projects: Project[] = [
       id: "Platform yang ditujukan untuk petani di Indonesia untuk mendeteksi penyakit pada tanaman padi mereka. Sistem menggunakan teknologi machine learning untuk menganalisis gambar daun padi dan memberikan diagnosis yang akurat. Termasuk fitur riwayat untuk hasil deteksi negatif. Dashboard dengan metrik disertakan.",
       en: "A platform designed for farmers in Indonesia to detect diseases in their rice plants. The system uses machine learning technology to analyze images of rice leaves and provide accurate diagnoses. Features include email/SMS notification for negative results and a history feature for detected cases. Dashboard with metrics included.",
     },
-    url: "https://revio.txemaalbero.com/",
     media: [
       "/projects/revio/landing.png",
       "/projects/revio/dashboard.png",
@@ -83,7 +82,6 @@ const projects: Project[] = [
       id: "Digitalisasi HACCP lengkap untuk restoran: catatan suhu, ketertelusuran, alergen, dan pembuatan rencana HACCP berbantuan AI. Terintegrasi dengan Open Food Facts untuk alergen, autentikasi yang dilindungi MFA, i18n dengan next-intl, dan penagihan langganan dengan Stripe. Backend sepenuhnya asinkron dengan FastAPI + SQLAlchemy dan pekerja Celery.",
       en: "Full HACCP digitisation for a restaurant: temperature logs, traceability, allergens, and AI-assisted generation of HACCP plans. Integrates with Open Food Facts for allergens, MFA-protected auth, i18n with next-intl, subscription billing with Stripe. Fully async backend with FastAPI + SQLAlchemy and Celery workers.",
     },
-    url: "https://aptia.txemaalbero.com/",
     media: [
       "/projects/aptia/landing.png",
       "/projects/aptia/panel.png",
@@ -121,7 +119,6 @@ const projects: Project[] = [
       id: "Aplikasi Django klasik (MVT) untuk keuangan pribadi: kategorisasi pengeluaran, tujuan tabungan, impor massal dari Excel (xlsx/xls) dan grafik bertenaga Chart.js. Tema terang/gelap dalam CSS murni tanpa dependensi frontend. Proyek yang memprioritaskan kesederhanaan dan ketahanan: tidak ada kerangka kerja klien, autentikasi bawaan Django, penyimpanan SQLite.",
       en: "Classic Django (MVT) app for personal finance: expense categorisation, savings goals, bulk import from Excel (xlsx/xls) and Chart.js-powered graphs. Light/dark themes in pure CSS with zero frontend dependencies. A project that favours simplicity and robustness: no client framework, Django's built-in auth, SQLite storage.",
     },
-    github: "https://github.com/Txemalon/Gestor-de-gastos-personales",
     media: [
       "/projects/gestor-gastos/dashboard.png",
       "/projects/gestor-gastos/wallets.png",
@@ -395,19 +392,6 @@ export default function Home() {
                     their own row below the two primary buttons. Hidden on md+
                     so desktop keeps everything on a single line. */}
                 <div className="basis-full h-0 md:hidden" aria-hidden />
-                <a
-                  href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-cursor="hover"
-                  data-magnetic
-                  className="frost-icon"
-                  aria-label="LinkedIn"
-                >
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden>
-                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.4 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V22h-4.56v-6.59c0-1.57-.03-3.6-2.19-3.6-2.19 0-2.53 1.71-2.53 3.48V22H7.62V8z" />
-                  </svg>
-                </a>
                 <a
                   href="https://github.com/fbriii-wda"
                   target="_blank"
@@ -737,15 +721,6 @@ export default function Home() {
                     className="frost-btn"
                   >
                     {t("contact.github")}
-                  </a>
-                  <a
-                    href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-cursor="hover"
-                    className="frost-btn"
-                  >
-                    {t("contact.linkedin")}
                   </a>
                 </div>
               </Reveal>
