@@ -12,6 +12,7 @@ import SeasonProvider, {
 import LanguageProvider, {
   LANG_BOOT_SCRIPT,
 } from "@/components/LanguageProvider";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <SeasonProvider>
             <StarsCanvas />
             <ScrollProgress />
+            <BackgroundMusic />
             {children}
             <CustomCursor />
             <MagneticTargets />
