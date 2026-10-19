@@ -301,28 +301,6 @@ export default function Home() {
               </svg>
               <span>TikTok</span>
             </a>
-            <a
-              href="https://www.instagram.com/fbriii_wda?igsi=NDlwMjZidGNkdGJq&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="hover"
-              className="frost-btn py-1.5 px-3 text-xs"
-              aria-label="Instagram"
-            >
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" strokeWidth="2" aria-hidden>
-                <defs>
-                  <linearGradient id="instagram-gradient-header" x1="3" y1="21" x2="21" y2="3">
-                    <stop offset="0%" stopColor="#F58529" />
-                    <stop offset="45%" stopColor="#DD2A7B" />
-                    <stop offset="100%" stopColor="#8134AF" />
-                  </linearGradient>
-                </defs>
-                <rect x="3" y="3" width="18" height="18" rx="5" stroke="url(#instagram-gradient-header)" />
-                <circle cx="12" cy="12" r="4" stroke="#DD2A7B" />
-                <circle cx="17.5" cy="6.5" r="1" fill="#F58529" stroke="none" />
-              </svg>
-              <span>Instagram</span>
-            </a>
             </span>
             <LanguagePicker />
           </div>
