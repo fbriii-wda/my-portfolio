@@ -61,26 +61,25 @@ const projects: Project[] = [
   {
     num: "02",
     name: {
-      id: "Kontrol Suhu HACCP",
-      en: "HACCP Temperature Control",
+      id: "Aplikasi Monitoring Smart Farming",
+      en: "Smart Farming Monitoring App",
     },
     stack: [
       "Next.js 16",
       "FastAPI",
       "Python",
       "PostgreSQL",
-      "Supabase",
       "Claude API",
-      "Stripe",
-      "Celery",
+      "Firebase",
+      "Arduino",
     ],
     desc: {
-      id: "Aplikasi untuk restoran yang mendigitalkan pencatatan suhu HACCP dan menghasilkan rencana dan laporan otomatis untuk inspeksi keamanan pangan.",
-      en: "App for restaurants that digitises HACCP temperature logs and auto-generates plans and reports for food safety inspections.",
+      id: "Aplikasi untuk memonitoring Green House.",
+      en: "App for monitoring greenhouses.",
     },
     details: {
-      id: "Digitalisasi HACCP lengkap untuk restoran: catatan suhu, ketertelusuran, alergen, dan pembuatan rencana HACCP berbantuan AI. Terintegrasi dengan Open Food Facts untuk alergen, autentikasi yang dilindungi MFA, i18n dengan next-intl, dan penagihan langganan dengan Stripe. Backend sepenuhnya asinkron dengan FastAPI + SQLAlchemy dan pekerja Celery.",
-      en: "Full HACCP digitisation for a restaurant: temperature logs, traceability, allergens, and AI-assisted generation of HACCP plans. Integrates with Open Food Facts for allergens, MFA-protected auth, i18n with next-intl, subscription billing with Stripe. Fully async backend with FastAPI + SQLAlchemy and Celery workers.",
+      id: "Monitoring lengkap seperti menampilkan suhu dan kelembaban tanah dan juga bisa mengatur sistem irigasi.",
+      en: "Comprehensive monitoring includes displaying soil temperature and humidity, and also allows for the control of irrigation systems.",
     },
     media: [
       "/projects/aptia/landing.png",
@@ -90,7 +89,7 @@ const projects: Project[] = [
       "/projects/aptia/inspeccion.png",
       "/projects/aptia/cuestionario.png",
     ],
-    highlights: ["nextdotjs", "tailwindcss", "python", "firebase", "typescript"],
+    highlights: ["nextjs", "tailwindcss", "python", "firebase", "typescript", "C++", "Arduino"],
     badge: { id: "Sedang Dikembangkan", en: "In progress" },
     align: "right",
     section: "project2",
@@ -98,8 +97,8 @@ const projects: Project[] = [
   {
     num: "03",
     name: {
-      id: "Pelacak Keuangan Pribadi",
-      en: "Personal Finance Tracker",
+      id: "IOT untuk Sistem Irigasi Otomatis",
+      en: "IOT for Automated Irrigation System",
     },
     stack: [
       "Django",
@@ -112,12 +111,12 @@ const projects: Project[] = [
       "pandas",
     ],
     desc: {
-      id: "Dashboard untuk melacak pendapatan, pengeluaran, dan tujuan tabungan dengan bagan visual, impor Excel, dan laporan bulanan.",
-      en: "Dashboard to track income, expenses and savings goals with visual charts, Excel import and monthly reports.",
+      id: "Alat untuk sistem irigasi otomatis berbasis IoT dengan dasbor untuk memantau suhu, kelembaban tanah, dan status pompa. Dilengkapi dengan grafik visual, impor Excel, dan tombol kontrol manual ataupun otomatis untuk pompa.",
+      en: "Tool for automated irrigation systems based on IoT with a dashboard to monitor temperature, soil humidity, and pump status. Equipped with visual charts, Excel import, and manual or automatic control buttons for the pump.",
     },
     details: {
-      id: "Aplikasi Django klasik (MVT) untuk keuangan pribadi: kategorisasi pengeluaran, tujuan tabungan, impor massal dari Excel (xlsx/xls) dan grafik bertenaga Chart.js. Tema terang/gelap dalam CSS murni tanpa dependensi frontend. Proyek yang memprioritaskan kesederhanaan dan ketahanan: tidak ada kerangka kerja klien, autentikasi bawaan Django, penyimpanan SQLite.",
-      en: "Classic Django (MVT) app for personal finance: expense categorisation, savings goals, bulk import from Excel (xlsx/xls) and Chart.js-powered graphs. Light/dark themes in pure CSS with zero frontend dependencies. A project that favours simplicity and robustness: no client framework, Django's built-in auth, SQLite storage.",
+      id: "Untuk membangun sistem irigasi otomatis berbasis IoT, Anda dapat menggunakan ESP32 DOIT WiFi sebagai otak utama yang akan menghubungkan seluruh perangkat ke internet. Sistem ini mengandalkan Capacitive Soil Moisture Sensor yang anti karat untuk membaca seberapa kering tanah Anda, dipadukan dengan sensor DHT-22 yang bertugas memantau suhu dan kelembaban udara sekitar secara akurat. Saat tanah membutuhkan air, ESP32 akan mengirimkan sinyal melalui sebuah Relay 5V untuk menyalakan Pompa Air Mini Celup DC 12V secara otomatis.",
+      en: "To build an IoT-based automatic irrigation system, you can use the ESP32 DOIT WiFi as the main brain that connects all devices to the internet. This system relies on a rust-resistant Capacitive Soil Moisture Sensor to read how dry your soil is, paired with a DHT-22 sensor that accurately monitors the ambient temperature and humidity. When the soil needs water, the ESP32 will send a signal through a 5V Relay to automatically turn on the 12V Mini Submersible DC Water Pump.",
     },
     media: [
       "/projects/gestor-gastos/dashboard.png",
@@ -127,7 +126,7 @@ const projects: Project[] = [
       "/projects/gestor-gastos/reportes.png",
       "/projects/gestor-gastos/inversiones.png",
     ],
-    highlights: ["python", "javascript", "html5", "css"],
+    highlights: ["python", "javascript", "html5", "css", "C++", "Arduino"],
     align: "left",
     section: "project3",
   },
@@ -159,7 +158,7 @@ const projects: Project[] = [
       "/projects/dianas/packs.png",
       "/projects/dianas/catalogo.png",
     ],
-    highlights: ["nextdotjs", "react", "typescript", "tailwindcss", "firebase"],
+    highlights: ["nextjs", "react", "typescript", "tailwindcss", "firebase"],
     badge: { id: "Sedang Dibangun", en: "Under construction" },
     align: "right",
     section: "project4",
