@@ -75,6 +75,10 @@ export const DICT = {
     kicker: { id: "proyek", en: "project" },
     viewMore: { id: "Lihat lebih", en: "View more" },
     openSite: { id: "Kunjungi situs", en: "Visit site" },
+    siteUnavailable: {
+      id: "Tautan website belum tersedia",
+      en: "Website link is not available yet",
+    },
     viewCode: { id: "Lihat kode", en: "View code" },
     close: { id: "Tutup", en: "Close" },
     stackLabel: { id: "Stack", en: "Stack" },

@@ -46,6 +46,7 @@ const projects: Project[] = [
       id: "Platform yang ditujukan untuk petani di Indonesia untuk mendeteksi penyakit pada tanaman padi mereka. Sistem menggunakan teknologi machine learning untuk menganalisis gambar daun padi dan memberikan diagnosis yang akurat. Termasuk fitur riwayat untuk hasil deteksi negatif. Dashboard dengan metrik disertakan.",
       en: "A platform designed for farmers in Indonesia to detect diseases in their rice plants. The system uses machine learning technology to analyze images of rice leaves and provide accurate diagnoses. Features include email/SMS notification for negative results and a history feature for detected cases. Dashboard with metrics included.",
     },
+    url: "",
     media: [
       "/projects/revio/landing.png",
       "/projects/revio/dashboard.png",
@@ -81,6 +82,7 @@ const projects: Project[] = [
       id: "Monitoring lengkap seperti menampilkan suhu dan kelembaban tanah dan juga bisa mengatur sistem irigasi.",
       en: "Comprehensive monitoring includes displaying soil temperature and humidity, and also allows for the control of irrigation systems.",
     },
+    url: "",
     media: [
       "/projects/aptia/landing.png",
       "/projects/aptia/panel.png",
@@ -118,6 +120,7 @@ const projects: Project[] = [
       id: "Untuk membangun sistem irigasi otomatis berbasis IoT, Anda dapat menggunakan ESP32 DOIT WiFi sebagai otak utama yang akan menghubungkan seluruh perangkat ke internet. Sistem ini mengandalkan Capacitive Soil Moisture Sensor yang anti karat untuk membaca seberapa kering tanah Anda, dipadukan dengan sensor DHT-22 yang bertugas memantau suhu dan kelembaban udara sekitar secara akurat. Saat tanah membutuhkan air, ESP32 akan mengirimkan sinyal melalui sebuah Relay 5V untuk menyalakan Pompa Air Mini Celup DC 12V secara otomatis.",
       en: "To build an IoT-based automatic irrigation system, you can use the ESP32 DOIT WiFi as the main brain that connects all devices to the internet. This system relies on a rust-resistant Capacitive Soil Moisture Sensor to read how dry your soil is, paired with a DHT-22 sensor that accurately monitors the ambient temperature and humidity. When the soil needs water, the ESP32 will send a signal through a 5V Relay to automatically turn on the 12V Mini Submersible DC Water Pump.",
     },
+    url: "",
     media: [
       "/projects/gestor-gastos/dashboard.png",
       "/projects/gestor-gastos/wallets.png",
@@ -154,6 +157,7 @@ const projects: Project[] = [
       id: "Platform web modern yang dirancang khusus untuk mempromosikan dan mengenalkan keindahan berbagai destinasi wisata alam, mulai dari eksotisme pantai, kemegahan pegunungan, hingga kesegaran air terjun, guna memberikan pengalaman eksplorasi visual yang interaktif bagi calon wisatawan.",
       en: "A modern web platform specifically designed to promote and showcase the beauty of various natural destinations from exotic beaches and majestic mountains to refreshing waterfalls delivering an interactive visual exploration experience for prospective travelers.",
     },
+    url: "https://pertualangan-tanpa-batas.vercel.app/",
     media: [
       "/projects/dianas/packs.png",
       "/projects/dianas/catalogo.png",
