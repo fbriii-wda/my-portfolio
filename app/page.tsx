@@ -65,7 +65,7 @@ const projects: Project[] = [
       en: "Smart Farming Monitoring App",
     },
     stack: [
-      "Next.js 16",
+      "Next.js",
       "FastAPI",
       "Python",
       "PostgreSQL",
@@ -133,11 +133,11 @@ const projects: Project[] = [
   {
     num: "04",
     name: {
-      id: "E-commerce Papan Dart",
-      en: "Dartboards e-commerce",
+      id: "Website Traveling",
+      en: "Traveling Website",
     },
     stack: [
-      "Next.js 15",
+      "Next.js",
       "React",
       "TypeScript",
       "Prisma",
@@ -147,19 +147,19 @@ const projects: Project[] = [
       "Framer Motion",
     ],
     desc: {
-      id: "E-commerce modern untuk penjualan papan dart dengan pembayaran terintegrasi, autentikasi sosial, panel admin, dan animasi yang halus.",
-      en: "Modern e-commerce for dartboards with integrated payments, social auth, an admin panel and smooth animations.",
+      id: "Website modern untuk mengenalkan destinasi wisata seperti pantai gunung atau air terjun.",
+      en: "Modern website for introducing tourist destinations such as beaches, mountains, or waterfalls.",
     },
     details: {
-      id: "E-commerce lengkap dengan katalog, keranjang, dan checkout dengan Stripe. NextAuth dengan Google OAuth dan kredensial, pembatasan laju dengan Upstash Redis, validasi Zod, dan panel admin terpisah (AdminJS di Express, port 3001). Framer Motion menghadirkan transisi dan mikro-interaksi untuk nuansa yang lebih premium daripada toko biasa.",
-      en: "A full e-commerce with catalogue, cart and Stripe checkout. NextAuth with Google OAuth and credentials, Upstash Redis for rate limiting, Zod validation, and a separate admin panel (AdminJS on Express, port 3001). Framer Motion powers transitions and micro-interactions for a more premium feel than a typical shop.",
+      id: "Platform web modern yang dirancang khusus untuk mempromosikan dan mengenalkan keindahan berbagai destinasi wisata alam, mulai dari eksotisme pantai, kemegahan pegunungan, hingga kesegaran air terjun, guna memberikan pengalaman eksplorasi visual yang interaktif bagi calon wisatawan.",
+      en: "A modern web platform specifically designed to promote and showcase the beauty of various natural destinations from exotic beaches and majestic mountains to refreshing waterfalls delivering an interactive visual exploration experience for prospective travelers.",
     },
     media: [
       "/projects/dianas/packs.png",
       "/projects/dianas/catalogo.png",
     ],
     highlights: ["nextjs", "react", "typescript", "tailwindcss", "firebase"],
-    badge: { id: "Sedang Dibangun", en: "Under construction" },
+    badge: { id: "Sudah Selesai", en: "Completed" },
     align: "right",
     section: "project4",
   },
